@@ -1,33 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Live Site</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      margin-top: 100px;
-      background: #111;
-      color: white;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 18px;
-      background: #00ffcc;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbershop Revamp</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+}
+
+nav h2 {
+  color: #d4af37;
+}
+
+nav a {
+  margin-left: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  background: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70') center/cover;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.hero span {
+  color: #d4af37;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #ccc;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #d4af37;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.card {
+  width: 22%;
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 15px 0;
+  color: #d4af37;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  color: #777;
+}
+</style>
+
 </head>
 <body>
 
-<h1>🚀 My Website is LIVE</h1>
-<p>If you see this, it works 😎</p>
+<nav>
+  <h2>Barbershop Revamp</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Sponsors</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
 
-<button onclick="alert('Hello from your live site!')">
-  Click me
-</button>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Revamping Barbershops.<br><span>Building Futures.</span></h1>
+    <p>We connect modern barbershops with brands that believe in culture, growth, and impact.</p>
+    <button class="btn">Become a Sponsor</button>
+    <button class="btn" style="background:#333;color:#fff;">Learn More</button>
+  </div>
+</section>
+
+<section class="section">
+  <h2>More Than a Cut. A Movement.</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Modernize Spaces</h3>
+      <p>Create clean, professional barbershop environments.</p>
+    </div>
+
+    <div class="card">
+      <h3>Grow Communities</h3>
+      <p>Support local barbershops and future talent.</p>
+    </div>
+
+    <div class="card">
+      <h3>Brand Exposure</h3>
+      <p>Reach loyal customers through trusted shops.</p>
+    </div>
+
+    <div class="card">
+      <h3>Long-Term Impact</h3>
+      <p>Build lasting partnerships that matter.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Barbershop Revamp — All rights reserved
+</footer>
 
 </body>
 </html>

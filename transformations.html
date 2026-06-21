@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transformations</title>
+<title>Transformations - Barbershop Revamp</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -28,42 +28,72 @@ nav a {
   text-decoration:none;
 }
 
-h1 {
+header {
   text-align:center;
-  margin:50px 0;
+  padding:80px 20px 40px;
+}
+
+header h1 {
+  font-size:40px;
+}
+
+header p {
+  color:#aaa;
+  margin-top:10px;
 }
 
 .container {
-  padding:0 50px 50px;
+  padding:0 50px 80px;
 }
 
-.row {
+.project {
+  background:#111;
+  border-radius:12px;
+  margin-bottom:50px;
+  overflow:hidden;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.images {
   display:flex;
-  gap:20px;
-  margin-bottom:40px;
 }
 
-.box {
-  flex:1;
+.images img {
+  width:50%;
+  height:300px;
+  object-fit:cover;
 }
 
-.box img {
-  width:100%;
-  border-radius:10px;
+.content {
+  padding:25px;
 }
 
-.label {
-  margin-top:10px;
-  text-align:center;
-  font-weight:bold;
+.content h2 {
+  margin-bottom:5px;
 }
 
-.before {
-  color:#ff4d4d;
+.location {
+  color:#d4af37;
+  font-size:14px;
+  margin-bottom:15px;
 }
 
-.after {
-  color:#4dff88;
+.desc {
+  color:#ccc;
+  margin-bottom:15px;
+}
+
+.upgrades {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tag {
+  background:#222;
+  padding:8px 12px;
+  border-radius:20px;
+  font-size:13px;
 }
 </style>
 </head>
@@ -75,32 +105,78 @@ h1 {
   <div>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </div>
 </nav>
 
-<h1>Before / After Transformations</h1>
+<header>
+  <h1>Real Transformations</h1>
+  <p>From outdated shops to premium modern barberspaces</p>
+</header>
 
 <div class="container">
 
-  <div class="row">
-    <div class="box">
+  <!-- PROJECT 1 -->
+  <div class="project">
+    <div class="images">
       <img src="https://images.unsplash.com/photo-1605497787865-e6cfb8c4b68d">
-      <div class="label before">Before</div>
-    </div>
-    <div class="box">
       <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70">
-      <div class="label after">After</div>
+    </div>
+    <div class="content">
+      <h2>Elite Cuts</h2>
+      <div class="location">📍 Tunis, Tunisia</div>
+      <div class="desc">
+        Full upgrade from an outdated setup to a premium barbershop experience designed to attract higher-end clients.
+      </div>
+      <div class="upgrades">
+        <div class="tag">Premium Barber Chairs</div>
+        <div class="tag">LED Mirrors</div>
+        <div class="tag">Modern Lighting</div>
+        <div class="tag">Brand Redesign</div>
+      </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="box">
+  <!-- PROJECT 2 -->
+  <div class="project">
+    <div class="images">
       <img src="https://images.unsplash.com/photo-1593702288052-e0b1f4d7c4c7">
-      <div class="label before">Before</div>
-    </div>
-    <div class="box">
       <img src="https://images.unsplash.com/photo-1616627988259-48a8c59c7d5c">
-      <div class="label after">After</div>
+    </div>
+    <div class="content">
+      <h2>Urban Fade Studio</h2>
+      <div class="location">📍 Sousse, Tunisia</div>
+      <div class="desc">
+        Redesigned layout and upgraded equipment to improve client flow and increase daily appointments.
+      </div>
+      <div class="upgrades">
+        <div class="tag">Shampoo Station</div>
+        <div class="tag">Tool Organization</div>
+        <div class="tag">Interior Design</div>
+        <div class="tag">Customer Experience</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project">
+    <div class="images">
+      <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+    </div>
+    <div class="content">
+      <h2>Next Level Barbers</h2>
+      <div class="location">📍 Sfax, Tunisia</div>
+      <div class="desc">
+        Complete transformation focusing on branding, lighting, and high-end product integration.
+      </div>
+      <div class="upgrades">
+        <div class="tag">Keratin Products</div>
+        <div class="tag">Premium Tools</div>
+        <div class="tag">Modern Interior</div>
+        <div class="tag">Brand Positioning</div>
+      </div>
     </div>
   </div>
 

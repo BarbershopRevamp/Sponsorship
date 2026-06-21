@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - Barbershop Revamp</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:Poppins;
+  background:#0b0b0b;
+  color:white;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  background:#000;
+}
+
+nav a {
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+h1 {
+  text-align:center;
+  margin:50px 0;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+  padding:0 50px 50px;
+}
+
+.card {
+  background:#111;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.card img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.price {
+  color:#d4af37;
+  margin-top:10px;
+}
+
+button {
+  margin-top:10px;
+  padding:10px;
+  background:#d4af37;
+  border:none;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Revamp</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="transformations.html">Transformations</a>
+  </div>
+</nav>
+
+<h1>Premium Barbershop Products</h1>
+
+<div class="grid">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1599351431405-0c4a3f4a8d6f">
+    <h3>Barber Chair</h3>
+    <p class="price">€499</p>
+    <button>Partner Product</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+    <h3>Shampoo Unit</h3>
+    <p class="price">€599</p>
+    <button>Partner Product</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+    <h3>Hair Products</h3>
+    <p class="price">€29</p>
+    <button>Partner Product</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70">
+    <h3>Professional Clipper</h3>
+    <p class="price">€89</p>
+    <button>Partner Product</button>
+  </div>
+
+</div>
+
+</body>
+</html>
